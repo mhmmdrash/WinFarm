@@ -4,7 +4,7 @@ pragma solidity ^0.8;
 import "./WinToken.sol";
 import "./RenToken.sol";
 
-contract WinFarm2 {
+contract WinFarm {
 
     struct staker {
         uint balance;
