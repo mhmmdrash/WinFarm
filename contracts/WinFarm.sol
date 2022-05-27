@@ -58,7 +58,7 @@ contract WinFarm {
     }
 
     // rewards will be distributed 5% quarterly
-    function calculateReward(address user) internal view returns(uint reward) {
+    function calculateReward(address user) public view returns(uint reward) {
         uint time = calculateYieldTime(user) * 10 ** 18;
         uint rate = 86400 * 30 * 3;
         uint timerate = time / rate;
